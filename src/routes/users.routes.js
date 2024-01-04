@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const usersRouter = Router();
 
-const UsersController = require("../controllers/usersController");
+const UsersController = require("../controllers/UsersController");
 const usersController = new UsersController();
 
 const AvatarController = require("../controllers/AvatarController");
