@@ -1,4 +1,5 @@
 require("express-async-errors");
+require("dotenv/config");
 
 const cors = require("cors");
 const express = require("express");
@@ -7,7 +8,7 @@ const router = require("./routes");
 const AppError = require("./utils/AppError");
 const { UPLOADS_FOLDER } = require("./configs/upload");
 
-const port = 3333;
+const port = process.env.PORT || 3333;
 
 const app = express();
 
